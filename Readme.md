@@ -2,18 +2,17 @@ High Side milliOhm NMOS Anti Spark Switch
 ===
 # Introduction
 
-<img src=front.PNG width="auto">
-<img src=back.PNG width="auto">
-<img src=PCB.PNG width="auto">
-
-
-
 This PCB is an Anti-Spark switch for high capacitive loads (150A, 60V) and was especially designed for electric longboards.
 It uses two IRFS7530 milliOhm N-MOSFET (can be easily upgraded to more FETs), which have a Rdson of 0.7 mOhm in the worst case,
 which enables a maximum current of around 450A with sufficient cooling.
 
 Inspired by the [DieBieMS](https://github.com/DieBieEngineering/DieBieMS) it uses a BQ76200PWR HighSide MOSFET driver,
 to enable the high switching with NMOS.
+
+<img src=front.PNG width="auto">
+<img src=back.PNG width="auto">
+<img src=PCB.PNG width="auto">
+
 
 ## Features
 
