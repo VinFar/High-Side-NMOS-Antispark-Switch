@@ -42,112 +42,8 @@ F 3 "" H 1350 2750 50  0001 C CNN
 	1    1350 2750
 	1    0    0    -1  
 $EndComp
-$Comp
-L SamacSys_Parts:IRFS7530TRL7PP Q1
-U 1 1 5D714248
-P 7750 2150
-F 0 "Q1" H 8250 2415 50  0000 C CNN
-F 1 "IRFS7530TRL7PP" H 8250 2324 50  0000 C CNN
-F 2 "SamacSys_Parts:IRFS7530" H 8600 2250 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/IRFS7530TRL7PP.pdf" H 8600 2150 50  0001 L CNN
-F 4 "MOSFET 60V 240A StrongIRFET D2PAK-7 Infineon IRFS7530TRL7PP N-channel MOSFET Transistor, 240 A, 60 V, 7-Pin D2PAK" H 8600 2050 50  0001 L CNN "Description"
-F 5 "" H 8600 1950 50  0001 L CNN "Height"
-F 6 "942-IRFS7530TRL7PP" H 8600 1850 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=942-IRFS7530TRL7PP" H 8600 1750 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Infineon" H 8600 1650 50  0001 L CNN "Manufacturer_Name"
-F 9 "IRFS7530TRL7PP" H 8600 1550 50  0001 L CNN "Manufacturer_Part_Number"
-	1    7750 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L SamacSys_Parts:IRFS7530TRL7PP Q2
-U 1 1 5D71511D
-P 7750 2900
-F 0 "Q2" H 8250 3165 50  0000 C CNN
-F 1 "IRFS7530TRL7PP" H 8250 3074 50  0000 C CNN
-F 2 "SamacSys_Parts:IRFS7530" H 8600 3000 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/IRFS7530TRL7PP.pdf" H 8600 2900 50  0001 L CNN
-F 4 "MOSFET 60V 240A StrongIRFET D2PAK-7 Infineon IRFS7530TRL7PP N-channel MOSFET Transistor, 240 A, 60 V, 7-Pin D2PAK" H 8600 2800 50  0001 L CNN "Description"
-F 5 "" H 8600 2700 50  0001 L CNN "Height"
-F 6 "942-IRFS7530TRL7PP" H 8600 2600 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=942-IRFS7530TRL7PP" H 8600 2500 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Infineon" H 8600 2400 50  0001 L CNN "Manufacturer_Name"
-F 9 "IRFS7530TRL7PP" H 8600 2300 50  0001 L CNN "Manufacturer_Part_Number"
-	1    7750 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7750 2250 7750 2350
-Wire Wire Line
-	7750 2350 7750 2450
-Connection ~ 7750 2350
-Wire Wire Line
-	8750 2900 8750 2950
-Wire Wire Line
-	7750 3000 7750 3100
-Wire Wire Line
-	7750 3200 7750 3100
-Connection ~ 7750 3100
-Wire Wire Line
-	7750 2450 7500 2450
-Wire Wire Line
-	7500 2450 7500 2600
-Wire Wire Line
-	7500 3100 7750 3100
-Connection ~ 7750 2450
-Wire Wire Line
-	7500 2600 9050 2600
-Wire Wire Line
-	9050 2600 9050 2400
-Connection ~ 7500 2600
-Wire Wire Line
-	7500 2600 7500 3100
-Wire Wire Line
-	9050 2600 9050 2950
-Wire Wire Line
-	9050 2950 8750 2950
-Connection ~ 9050 2600
-Connection ~ 8750 2950
-Wire Wire Line
-	8750 2950 8750 3000
-Wire Wire Line
-	8750 3100 8900 3100
-Wire Wire Line
-	8900 3100 8900 2350
-Wire Wire Line
-	8900 2350 8750 2350
-Wire Wire Line
-	7750 2150 7350 2150
-Wire Wire Line
-	7350 2900 7750 2900
-Text GLabel 9950 2400 2    50   Input ~ 0
+Text GLabel 9050 1900 2    50   Input ~ 0
 VESC
-Wire Wire Line
-	9950 2400 9050 2400
-Connection ~ 9050 2400
-Wire Wire Line
-	9050 2400 9050 2200
-$Comp
-L power:+BATT #PWR010
-U 1 1 5D716DCE
-P 8900 2000
-F 0 "#PWR010" H 8900 1850 50  0001 C CNN
-F 1 "+BATT" H 8915 2173 50  0000 C CNN
-F 2 "" H 8900 2000 50  0001 C CNN
-F 3 "" H 8900 2000 50  0001 C CNN
-	1    8900 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 2150 8750 2200
-Wire Wire Line
-	9050 2200 8750 2200
-Connection ~ 8750 2200
-Wire Wire Line
-	8750 2200 8750 2250
-Wire Wire Line
-	8900 2350 8900 2000
-Connection ~ 8900 2350
 $Comp
 L Device:C C1
 U 1 1 5D71940E
@@ -294,11 +190,6 @@ Wire Wire Line
 Wire Wire Line
 	6550 2900 6550 2850
 Wire Wire Line
-	7350 2850 7350 2900
-Wire Wire Line
-	7350 2150 7350 2850
-Connection ~ 7350 2850
-Wire Wire Line
 	6000 2900 6550 2900
 Connection ~ 6000 2900
 $Comp
@@ -374,9 +265,6 @@ Wire Wire Line
 	5650 2900 6000 2900
 Wire Wire Line
 	6550 2850 6750 2850
-Connection ~ 6750 2850
-Wire Wire Line
-	6750 2850 7350 2850
 $Comp
 L Device:Fuse F1
 U 1 1 5D75F413
@@ -549,17 +437,469 @@ Wire Wire Line
 Connection ~ 4400 2200
 Wire Wire Line
 	4400 2200 4550 2200
-$Comp
-L power:+BATT +BATT
-U 1 1 5D7909E2
-P 1350 1950
-F 0 "+BATT" H 1350 1800 50  0001 C CNN
-F 1 "+BATT" H 1365 2123 50  0000 C CNN
-F 2 "" H 1350 1950 50  0001 C CNN
-F 3 "" H 1350 1950 50  0001 C CNN
-	1    1350 1950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1350 2250 1350 2400
+$Comp
+L SamacSys_Parts:TPW1R306PL,L1Q Q1
+U 1 1 5D777EAD
+P 8800 2400
+F 0 "Q1" H 9300 2665 50  0000 C CNN
+F 1 "TPW1R306PL,L1Q" H 9300 2574 50  0000 C CNN
+F 2 "SOP_ADVANCE" H 9650 2500 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TPW1R306PL,L1Q.pdf" H 9650 2400 50  0001 L CNN
+F 4 "MOSFET POWER MOSFET TRANSISTOR PD=170W" H 9650 2300 50  0001 L CNN "Description"
+F 5 "" H 9650 2200 50  0001 L CNN "Height"
+F 6 "757-TPW1R306PLL1Q" H 9650 2100 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=757-TPW1R306PLL1Q" H 9650 2000 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Toshiba" H 9650 1900 50  0001 L CNN "Manufacturer_Name"
+F 9 "TPW1R306PL,L1Q" H 9650 1800 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8800 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6750 2850 8800 2850
+Wire Wire Line
+	8950 2850 8950 2100
+Wire Wire Line
+	8950 2100 8800 2100
+Connection ~ 6750 2850
+Wire Wire Line
+	8800 2400 9000 2400
+Wire Wire Line
+	8800 2400 8800 2300
+Connection ~ 8800 2400
+Wire Wire Line
+	8800 2200 8800 2300
+Connection ~ 8800 2300
+Wire Wire Line
+	7800 2100 7800 2200
+Wire Wire Line
+	7800 2200 7800 2300
+Connection ~ 7800 2200
+Wire Wire Line
+	7800 2300 7800 2400
+Connection ~ 7800 2300
+Text GLabel 1350 2400 0    50   Input ~ 0
+FUSE+
+Text GLabel 7450 2200 0    50   Input ~ 0
+FUSE+
+Wire Wire Line
+	7450 2200 7800 2200
+$Comp
+L SamacSys_Parts:TPW1R306PL,L1Q Q2
+U 1 1 5D7A90A1
+P 8800 3300
+F 0 "Q2" H 9300 3565 50  0000 C CNN
+F 1 "TPW1R306PL,L1Q" H 9300 3474 50  0000 C CNN
+F 2 "SOP_ADVANCE" H 9650 3400 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TPW1R306PL,L1Q.pdf" H 9650 3300 50  0001 L CNN
+F 4 "MOSFET POWER MOSFET TRANSISTOR PD=170W" H 9650 3200 50  0001 L CNN "Description"
+F 5 "" H 9650 3100 50  0001 L CNN "Height"
+F 6 "757-TPW1R306PLL1Q" H 9650 3000 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=757-TPW1R306PLL1Q" H 9650 2900 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Toshiba" H 9650 2800 50  0001 L CNN "Manufacturer_Name"
+F 9 "TPW1R306PL,L1Q" H 9650 2700 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8800 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L SamacSys_Parts:TPW1R306PL,L1Q Q3
+U 1 1 5D7AAC0F
+P 8800 4000
+F 0 "Q3" H 9300 4265 50  0000 C CNN
+F 1 "TPW1R306PL,L1Q" H 9300 4174 50  0000 C CNN
+F 2 "SOP_ADVANCE" H 9650 4100 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TPW1R306PL,L1Q.pdf" H 9650 4000 50  0001 L CNN
+F 4 "MOSFET POWER MOSFET TRANSISTOR PD=170W" H 9650 3900 50  0001 L CNN "Description"
+F 5 "" H 9650 3800 50  0001 L CNN "Height"
+F 6 "757-TPW1R306PLL1Q" H 9650 3700 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=757-TPW1R306PLL1Q" H 9650 3600 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Toshiba" H 9650 3500 50  0001 L CNN "Manufacturer_Name"
+F 9 "TPW1R306PL,L1Q" H 9650 3400 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8800 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L SamacSys_Parts:TPW1R306PL,L1Q Q4
+U 1 1 5D7AC46B
+P 8800 4700
+F 0 "Q4" H 9300 4965 50  0000 C CNN
+F 1 "TPW1R306PL,L1Q" H 9300 4874 50  0000 C CNN
+F 2 "SOP_ADVANCE" H 9650 4800 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TPW1R306PL,L1Q.pdf" H 9650 4700 50  0001 L CNN
+F 4 "MOSFET POWER MOSFET TRANSISTOR PD=170W" H 9650 4600 50  0001 L CNN "Description"
+F 5 "" H 9650 4500 50  0001 L CNN "Height"
+F 6 "757-TPW1R306PLL1Q" H 9650 4400 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=757-TPW1R306PLL1Q" H 9650 4300 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Toshiba" H 9650 4200 50  0001 L CNN "Manufacturer_Name"
+F 9 "TPW1R306PL,L1Q" H 9650 4100 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8800 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L SamacSys_Parts:TPW1R306PL,L1Q Q5
+U 1 1 5D7AD8AD
+P 8800 5400
+F 0 "Q5" H 9300 5665 50  0000 C CNN
+F 1 "TPW1R306PL,L1Q" H 9300 5574 50  0000 C CNN
+F 2 "SOP_ADVANCE" H 9650 5500 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TPW1R306PL,L1Q.pdf" H 9650 5400 50  0001 L CNN
+F 4 "MOSFET POWER MOSFET TRANSISTOR PD=170W" H 9650 5300 50  0001 L CNN "Description"
+F 5 "" H 9650 5200 50  0001 L CNN "Height"
+F 6 "757-TPW1R306PLL1Q" H 9650 5100 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=757-TPW1R306PLL1Q" H 9650 5000 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Toshiba" H 9650 4900 50  0001 L CNN "Manufacturer_Name"
+F 9 "TPW1R306PL,L1Q" H 9650 4800 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8800 5400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7800 2400 7800 2700
+Connection ~ 7800 2400
+Wire Wire Line
+	7800 3000 7800 3100
+Connection ~ 7800 3000
+Wire Wire Line
+	7800 3100 7800 3200
+Connection ~ 7800 3100
+Wire Wire Line
+	7800 3200 7800 3300
+Connection ~ 7800 3200
+Wire Wire Line
+	7800 3700 7800 3800
+Wire Wire Line
+	7800 3700 7800 3300
+Connection ~ 7800 3700
+Connection ~ 7800 3300
+Wire Wire Line
+	7800 3900 7800 4000
+Wire Wire Line
+	7800 3800 7800 3900
+Connection ~ 7800 3800
+Connection ~ 7800 3900
+Wire Wire Line
+	7800 4400 7800 4500
+Wire Wire Line
+	7800 4500 7800 4600
+Connection ~ 7800 4500
+Connection ~ 7800 4600
+Wire Wire Line
+	7800 5100 7800 5200
+Wire Wire Line
+	7800 5200 7800 5300
+Connection ~ 7800 5200
+Wire Wire Line
+	7800 5300 7800 5400
+Connection ~ 7800 5300
+Wire Wire Line
+	7800 4400 7800 4000
+Connection ~ 7800 4400
+Connection ~ 7800 4000
+Wire Wire Line
+	7800 4600 7800 4700
+Wire Wire Line
+	7800 4700 7800 5100
+Connection ~ 7800 4700
+Connection ~ 7800 5100
+Wire Wire Line
+	8800 3000 8800 2850
+Connection ~ 8800 2850
+Wire Wire Line
+	8800 2850 8900 2850
+Wire Wire Line
+	8800 3100 8800 3200
+Wire Wire Line
+	8800 3200 8800 3300
+Connection ~ 8800 3200
+Wire Wire Line
+	8800 3800 8800 3900
+Wire Wire Line
+	8800 4000 8800 3900
+Connection ~ 8800 3900
+Wire Wire Line
+	8800 4600 8800 4500
+Wire Wire Line
+	8800 4700 8800 4600
+Connection ~ 8800 4600
+Wire Wire Line
+	8800 5300 8800 5200
+Wire Wire Line
+	8800 5400 8800 5300
+Connection ~ 8800 5300
+Wire Wire Line
+	8800 3100 9000 3100
+Wire Wire Line
+	9000 3100 9000 2400
+Connection ~ 8800 3100
+Wire Wire Line
+	8800 5300 9000 5300
+Wire Wire Line
+	9000 5300 9000 4600
+Wire Wire Line
+	9000 4600 8800 4600
+Wire Wire Line
+	8800 3900 9000 3900
+Wire Wire Line
+	9000 3900 9000 4600
+Connection ~ 9000 4600
+Wire Wire Line
+	9000 3100 9000 3900
+Connection ~ 9000 3100
+Connection ~ 9000 3900
+Wire Wire Line
+	8800 3700 8900 3700
+Wire Wire Line
+	8900 3700 8900 2850
+Connection ~ 8900 2850
+Wire Wire Line
+	8900 2850 8950 2850
+Wire Wire Line
+	8800 4400 8900 4400
+Wire Wire Line
+	8900 4400 8900 3700
+Connection ~ 8900 3700
+Wire Wire Line
+	8800 5100 8900 5100
+Wire Wire Line
+	8900 5100 8900 4400
+Connection ~ 8900 4400
+Text GLabel 1350 1900 1    50   Input ~ 0
+BATT+
+Wire Wire Line
+	1350 1900 1350 1950
+Wire Wire Line
+	10650 2600 10500 2600
+Wire Wire Line
+	9500 2600 9500 2700
+$Comp
+L SamacSys_Parts:TPW1R306PL,L1Q Q8
+U 1 1 5D83BD43
+P 10500 4500
+F 0 "Q8" H 11000 4765 50  0000 C CNN
+F 1 "TPW1R306PL,L1Q" H 11000 4674 50  0000 C CNN
+F 2 "SOP_ADVANCE" H 11350 4600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TPW1R306PL,L1Q.pdf" H 11350 4500 50  0001 L CNN
+F 4 "MOSFET POWER MOSFET TRANSISTOR PD=170W" H 11350 4400 50  0001 L CNN "Description"
+F 5 "" H 11350 4300 50  0001 L CNN "Height"
+F 6 "757-TPW1R306PLL1Q" H 11350 4200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=757-TPW1R306PLL1Q" H 11350 4100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Toshiba" H 11350 4000 50  0001 L CNN "Manufacturer_Name"
+F 9 "TPW1R306PL,L1Q" H 11350 3900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10500 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L SamacSys_Parts:TPW1R306PL,L1Q Q9
+U 1 1 5D83BD4F
+P 10500 5200
+F 0 "Q9" H 11000 5465 50  0000 C CNN
+F 1 "TPW1R306PL,L1Q" H 11000 5374 50  0000 C CNN
+F 2 "SOP_ADVANCE" H 11350 5300 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TPW1R306PL,L1Q.pdf" H 11350 5200 50  0001 L CNN
+F 4 "MOSFET POWER MOSFET TRANSISTOR PD=170W" H 11350 5100 50  0001 L CNN "Description"
+F 5 "" H 11350 5000 50  0001 L CNN "Height"
+F 6 "757-TPW1R306PLL1Q" H 11350 4900 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=757-TPW1R306PLL1Q" H 11350 4800 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Toshiba" H 11350 4700 50  0001 L CNN "Manufacturer_Name"
+F 9 "TPW1R306PL,L1Q" H 11350 4600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10500 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L SamacSys_Parts:TPW1R306PL,L1Q Q10
+U 1 1 5D83BD5B
+P 10500 5900
+F 0 "Q10" H 11000 6165 50  0000 C CNN
+F 1 "TPW1R306PL,L1Q" H 11000 6074 50  0000 C CNN
+F 2 "SOP_ADVANCE" H 11350 6000 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TPW1R306PL,L1Q.pdf" H 11350 5900 50  0001 L CNN
+F 4 "MOSFET POWER MOSFET TRANSISTOR PD=170W" H 11350 5800 50  0001 L CNN "Description"
+F 5 "" H 11350 5700 50  0001 L CNN "Height"
+F 6 "757-TPW1R306PLL1Q" H 11350 5600 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=757-TPW1R306PLL1Q" H 11350 5500 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Toshiba" H 11350 5400 50  0001 L CNN "Manufacturer_Name"
+F 9 "TPW1R306PL,L1Q" H 11350 5300 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10500 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9500 4200 9500 4300
+Wire Wire Line
+	9500 4400 9500 4500
+Wire Wire Line
+	9500 4300 9500 4400
+Connection ~ 9500 4300
+Connection ~ 9500 4400
+Wire Wire Line
+	9500 4900 9500 5000
+Wire Wire Line
+	9500 5000 9500 5100
+Connection ~ 9500 5000
+Connection ~ 9500 5100
+Wire Wire Line
+	9500 5600 9500 5700
+Wire Wire Line
+	9500 5700 9500 5800
+Connection ~ 9500 5700
+Wire Wire Line
+	9500 5800 9500 5900
+Connection ~ 9500 5800
+Wire Wire Line
+	9500 4900 9500 4500
+Connection ~ 9500 4900
+Connection ~ 9500 4500
+Wire Wire Line
+	9500 5100 9500 5200
+Wire Wire Line
+	9500 5200 9500 5600
+Connection ~ 9500 5200
+Connection ~ 9500 5600
+Wire Wire Line
+	10500 4300 10500 4400
+Wire Wire Line
+	10500 4500 10500 4400
+Connection ~ 10500 4400
+Wire Wire Line
+	10500 5100 10500 5000
+Wire Wire Line
+	10500 5200 10500 5100
+Connection ~ 10500 5100
+Wire Wire Line
+	10500 5800 10500 5700
+Wire Wire Line
+	10500 5900 10500 5800
+Connection ~ 10500 5800
+Wire Wire Line
+	10500 3600 10700 3600
+Wire Wire Line
+	10500 5800 10700 5800
+Wire Wire Line
+	10700 5800 10700 5100
+Wire Wire Line
+	10700 5100 10500 5100
+Wire Wire Line
+	10500 4400 10700 4400
+Wire Wire Line
+	10700 4400 10700 5100
+Connection ~ 10700 5100
+Wire Wire Line
+	10700 3600 10700 4400
+Connection ~ 10700 4400
+Wire Wire Line
+	10500 4200 10600 4200
+Wire Wire Line
+	10500 4900 10600 4900
+Wire Wire Line
+	10600 4900 10600 4200
+Wire Wire Line
+	10500 5600 10600 5600
+Wire Wire Line
+	10600 5600 10600 4900
+Connection ~ 10600 4900
+Wire Wire Line
+	9050 1900 9000 1900
+Wire Wire Line
+	9000 1900 9000 2400
+Connection ~ 9000 2400
+Wire Wire Line
+	9500 2700 7800 2700
+Connection ~ 7800 2700
+Wire Wire Line
+	7800 2700 7800 3000
+Wire Wire Line
+	10650 2600 10650 2100
+Wire Wire Line
+	10650 2100 8950 2100
+Connection ~ 8950 2100
+Wire Wire Line
+	10700 2400 9000 2400
+Connection ~ 9500 4200
+Wire Wire Line
+	9500 4200 9500 3800
+Connection ~ 9500 3800
+Wire Wire Line
+	9500 3700 9500 3800
+Connection ~ 9500 3700
+Wire Wire Line
+	9500 3600 9500 3700
+Connection ~ 9500 3600
+Wire Wire Line
+	9500 3500 9500 3600
+Connection ~ 10500 3600
+Wire Wire Line
+	10500 3700 10500 3800
+Wire Wire Line
+	10500 3600 10500 3700
+Connection ~ 10500 3700
+$Comp
+L SamacSys_Parts:TPW1R306PL,L1Q Q7
+U 1 1 5D83BD37
+P 10500 3800
+F 0 "Q7" H 11000 4065 50  0000 C CNN
+F 1 "TPW1R306PL,L1Q" H 11000 3974 50  0000 C CNN
+F 2 "SOP_ADVANCE" H 11350 3900 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TPW1R306PL,L1Q.pdf" H 11350 3800 50  0001 L CNN
+F 4 "MOSFET POWER MOSFET TRANSISTOR PD=170W" H 11350 3700 50  0001 L CNN "Description"
+F 5 "" H 11350 3600 50  0001 L CNN "Height"
+F 6 "757-TPW1R306PLL1Q" H 11350 3500 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=757-TPW1R306PLL1Q" H 11350 3400 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Toshiba" H 11350 3300 50  0001 L CNN "Manufacturer_Name"
+F 9 "TPW1R306PL,L1Q" H 11350 3200 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10500 3800
+	-1   0    0    1   
+$EndComp
+Connection ~ 10700 3600
+Connection ~ 9500 3500
+Connection ~ 9500 2700
+Connection ~ 10650 2600
+Wire Wire Line
+	10650 3350 10650 2600
+Wire Wire Line
+	10500 3500 10500 3350
+Wire Wire Line
+	10500 3350 10600 3350
+Connection ~ 10600 4200
+Wire Wire Line
+	10600 4200 10600 3350
+Connection ~ 10600 3350
+Wire Wire Line
+	10600 3350 10650 3350
+Wire Wire Line
+	10700 3600 10700 2900
+Wire Wire Line
+	10700 2900 10700 2400
+Connection ~ 10700 2900
+Wire Wire Line
+	10500 2900 10700 2900
+Wire Wire Line
+	9500 2900 9500 3500
+Connection ~ 9500 2900
+Wire Wire Line
+	9500 2800 9500 2900
+Wire Wire Line
+	9500 2700 9500 2800
+Connection ~ 9500 2800
+Wire Wire Line
+	10500 2700 10500 2800
+Wire Wire Line
+	10500 2900 10500 2800
+Connection ~ 10500 2800
+Connection ~ 10500 2900
+$Comp
+L SamacSys_Parts:TPW1R306PL,L1Q Q6
+U 1 1 5D83BD1D
+P 10500 2900
+F 0 "Q6" H 11000 3165 50  0000 C CNN
+F 1 "TPW1R306PL,L1Q" H 11000 3074 50  0000 C CNN
+F 2 "SOP_ADVANCE" H 11350 3000 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TPW1R306PL,L1Q.pdf" H 11350 2900 50  0001 L CNN
+F 4 "MOSFET POWER MOSFET TRANSISTOR PD=170W" H 11350 2800 50  0001 L CNN "Description"
+F 5 "" H 11350 2700 50  0001 L CNN "Height"
+F 6 "757-TPW1R306PLL1Q" H 11350 2600 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=757-TPW1R306PLL1Q" H 11350 2500 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Toshiba" H 11350 2400 50  0001 L CNN "Manufacturer_Name"
+F 9 "TPW1R306PL,L1Q" H 11350 2300 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10500 2900
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
