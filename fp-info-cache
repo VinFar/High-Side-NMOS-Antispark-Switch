@@ -1,4 +1,4 @@
-15980833087579533
+15982401233114796
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -65407,6 +65407,13 @@ Transistor
 0
 18
 18
+SamacSys_Parts
+SolderWirePad_1x01_SMD_5x10mm
+Wire Pad, Square, SMD Pad,  5mm x 10mm,
+MesurementPoint Square SMDPad 5mmx10mm 
+0
+1
+1
 SamacSys_Parts
 SOP65P490X110-9N
 HVSSOP (8)
