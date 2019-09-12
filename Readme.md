@@ -9,8 +9,8 @@ which theoretically enables a maximum current of around 250A with sufficient coo
 Inspired by the [DieBieMS](https://github.com/DieBieEngineering/DieBieMS) it uses a BQ76200PWR HighSide MOSFET driver,
 to enable the high switching with NMOS.
 
-<img src=front.PNG width="auto">
-<img src=back.PNG width="auto">
+<img src=front_with_copperbar.PNG width="auto">
+<img src=with_heatsink.PNG width="auto">
 <img src=PCB.PNG width="auto">
 
 
