@@ -115,17 +115,9 @@ Wire Wire Line
 Wire Wire Line
 	1800 2650 1650 2650
 Wire Wire Line
-	1650 2650 1650 2400
-Wire Wire Line
 	2500 2500 3450 2500
 Wire Wire Line
 	2500 2600 3450 2600
-Wire Wire Line
-	3300 2150 3300 2900
-Wire Wire Line
-	3300 2900 3450 2900
-Wire Wire Line
-	3000 3000 3450 3000
 $Comp
 L Device:R R1
 U 1 1 5D72ADF6
@@ -137,49 +129,16 @@ F 3 "~" H 1950 2650 50  0001 C CNN
 	1    1950 2650
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R2
-U 1 1 5D71E123
-P 3300 2000
-F 0 "R2" H 3370 2046 50  0000 L CNN
-F 1 "0" H 3370 1955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3230 2000 50  0001 C CNN
-F 3 "~" H 3300 2000 50  0001 C CNN
-	1    3300 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3300 1850 3300 1700
-Wire Wire Line
-	3300 1700 3150 1700
-$Comp
-L power:+BATT #PWR05
-U 1 1 5D725D55
-P 3150 1700
-F 0 "#PWR05" H 3150 1550 50  0001 C CNN
-F 1 "+BATT" H 3165 1873 50  0000 C CNN
-F 2 "" H 3150 1700 50  0001 C CNN
-F 3 "" H 3150 1700 50  0001 C CNN
-	1    3150 1700
-	1    0    0    -1  
-$EndComp
-Text GLabel 2750 1700 0    50   Input ~ 0
-SW+
 Text GLabel 2750 2050 0    50   Input ~ 0
 SW-
 Wire Wire Line
-	2750 1700 3150 1700
-Connection ~ 3150 1700
-Wire Wire Line
 	2750 2050 3000 2050
-Wire Wire Line
-	3000 2050 3000 3000
 $Comp
 L Device:R R3
 U 1 1 5D739D52
 P 5350 2900
 F 0 "R3" V 5557 2900 50  0000 C CNN
-F 1 "2M" V 5466 2900 50  0000 C CNN
+F 1 "1M" V 5466 2900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5280 2900 50  0001 C CNN
 F 3 "~" H 5350 2900 50  0001 C CNN
 	1    5350 2900
@@ -197,22 +156,11 @@ L Device:D_Zener D1
 U 1 1 5D73D98E
 P 6000 3050
 F 0 "D1" V 5954 3129 50  0000 L CNN
-F 1 "18V" V 6045 3129 50  0000 L CNN
+F 1 "10V" V 6045 3129 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 6000 3050 50  0001 C CNN
 F 3 "~" H 6000 3050 50  0001 C CNN
 	1    6000 3050
 	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR08
-U 1 1 5D73EDC3
-P 6000 3200
-F 0 "#PWR08" H 6000 2950 50  0001 C CNN
-F 1 "GND" H 6005 3027 50  0000 C CNN
-F 2 "" H 6000 3200 50  0001 C CNN
-F 3 "" H 6000 3200 50  0001 C CNN
-	1    6000 3200
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5500 2900 5650 2900
@@ -225,28 +173,6 @@ F 1 "10M" H 5720 3005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5580 3050 50  0001 C CNN
 F 3 "~" H 5650 3050 50  0001 C CNN
 	1    5650 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR07
-U 1 1 5D72FE62
-P 5650 3200
-F 0 "#PWR07" H 5650 2950 50  0001 C CNN
-F 1 "GND" H 5655 3027 50  0000 C CNN
-F 2 "" H 5650 3200 50  0001 C CNN
-F 3 "" H 5650 3200 50  0001 C CNN
-	1    5650 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR09
-U 1 1 5D732663
-P 6750 3150
-F 0 "#PWR09" H 6750 2900 50  0001 C CNN
-F 1 "GND" H 6755 2977 50  0000 C CNN
-F 2 "" H 6750 3150 50  0001 C CNN
-F 3 "" H 6750 3150 50  0001 C CNN
-	1    6750 3150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -265,25 +191,8 @@ Wire Wire Line
 	5650 2900 6000 2900
 Wire Wire Line
 	6550 2850 6750 2850
-$Comp
-L Device:Fuse F1
-U 1 1 5D75F413
-P 1350 2100
-F 0 "F1" H 1410 2146 50  0000 L CNN
-F 1 "Fuse" H 1410 2055 50  0000 L CNN
-F 2 "SamacSys_Parts:littleFuseBF1" V 1280 2100 50  0001 C CNN
-F 3 "~" H 1350 2100 50  0001 C CNN
-	1    1350 2100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1350 2400 1650 2400
-Wire Wire Line
-	3300 1500 3300 1700
-Connection ~ 3300 1700
 Wire Wire Line
 	3000 1800 3000 2050
-Connection ~ 3000 2050
 $Comp
 L SamacSys_Parts:TPS7A4101DGNR IC2
 U 1 1 5D75248D
@@ -372,29 +281,18 @@ Wire Wire Line
 Wire Wire Line
 	6300 2200 5200 2200
 $Comp
-L Device:R R6
-U 1 1 5D76B68B
-P 4350 950
-F 0 "R6" V 4557 950 50  0000 C CNN
-F 1 "10k" V 4466 950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4280 950 50  0001 C CNN
-F 3 "~" H 4350 950 50  0001 C CNN
-	1    4350 950 
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R R5
 U 1 1 5D76D111
 P 3900 950
 F 0 "R5" V 4107 950 50  0000 C CNN
-F 1 "92.301k" V 4016 950 50  0000 C CNN
+F 1 "500k" V 4016 950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3830 950 50  0001 C CNN
 F 3 "~" H 3900 950 50  0001 C CNN
 	1    3900 950 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4550 1200 4550 950 
+	4550 1200 4550 1150
 Wire Wire Line
 	4550 950  4500 950 
 Connection ~ 4550 1200
@@ -410,7 +308,7 @@ Wire Wire Line
 	3650 2200 3900 2200
 Connection ~ 3900 2200
 Wire Wire Line
-	4100 950  4100 1300
+	4100 950  4100 1150
 Wire Wire Line
 	4100 1300 4600 1300
 Connection ~ 4100 950 
@@ -663,8 +561,6 @@ Wire Wire Line
 Wire Wire Line
 	8900 5100 8900 4400
 Connection ~ 8900 4400
-Text GLabel 1350 1900 1    50   Input ~ 0
-BATT+
 Wire Wire Line
 	1350 1900 1350 1950
 Wire Wire Line
@@ -900,6 +796,157 @@ F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=757-TPW1R306PLL1Q" H 1135
 F 8 "Toshiba" H 11350 2400 50  0001 L CNN "Manufacturer_Name"
 F 9 "TPW1R306PL,L1Q" H 11350 2300 50  0001 L CNN "Manufacturer_Part_Number"
 	1    10500 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5D76B68B
+P 4350 950
+F 0 "R6" V 4557 950 50  0000 C CNN
+F 1 "50k" V 4466 950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4280 950 50  0001 C CNN
+F 3 "~" H 4350 950 50  0001 C CNN
+	1    4350 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+12V #PWR05
+U 1 1 5D9E9B36
+P 4550 950
+F 0 "#PWR05" H 4550 800 50  0001 C CNN
+F 1 "+12V" H 4565 1123 50  0000 C CNN
+F 2 "" H 4550 950 50  0001 C CNN
+F 3 "" H 4550 950 50  0001 C CNN
+	1    4550 950 
+	1    0    0    -1  
+$EndComp
+Connection ~ 4550 950 
+$Comp
+L Device:C C6
+U 1 1 5D9EA02A
+P 4350 1150
+F 0 "C6" H 4465 1196 50  0000 L CNN
+F 1 "1uF" H 4465 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4388 1000 50  0001 C CNN
+F 3 "~" H 4350 1150 50  0001 C CNN
+	1    4350 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 1150 4550 1150
+Connection ~ 4550 1150
+Wire Wire Line
+	4550 1150 4550 950 
+Wire Wire Line
+	4200 1150 4100 1150
+Connection ~ 4100 1150
+Wire Wire Line
+	4100 1150 4100 1300
+Wire Wire Line
+	6750 3150 6750 3200
+Wire Wire Line
+	6000 3200 5650 3200
+Connection ~ 6000 3200
+Text GLabel 7300 3200 2    50   Input ~ 0
+VESC
+$Comp
+L power:+12V #PWR01
+U 1 1 5DA397DF
+P 3100 2850
+F 0 "#PWR01" H 3100 2700 50  0001 C CNN
+F 1 "+12V" H 3115 3023 50  0000 C CNN
+F 2 "" H 3100 2850 50  0001 C CNN
+F 3 "" H 3100 2850 50  0001 C CNN
+	1    3100 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2900 3100 2850
+Wire Wire Line
+	3100 2900 3450 2900
+Wire Wire Line
+	3100 2900 3000 2900
+Wire Wire Line
+	3000 2900 3000 3000
+Connection ~ 3100 2900
+Text GLabel 3300 1500 0    50   Input ~ 0
+FUSE+
+Text GLabel 6800 1200 2    50   Input ~ 0
+SW-
+Wire Wire Line
+	6500 1200 6300 1200
+Connection ~ 6300 1200
+Wire Wire Line
+	1650 2650 1650 2400
+$Comp
+L Device:R R2
+U 1 1 5DA7FB94
+P 6650 1200
+F 0 "R2" V 6857 1200 50  0000 C CNN
+F 1 "1k" V 6766 1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6580 1200 50  0001 C CNN
+F 3 "~" H 6650 1200 50  0001 C CNN
+	1    6650 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1350 2400 1650 2400
+$Comp
+L Device:R R8
+U 1 1 5DA040BA
+P 6950 3200
+F 0 "R8" V 7157 3200 50  0000 C CNN
+F 1 "1M" V 7066 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6880 3200 50  0001 C CNN
+F 3 "~" H 6950 3200 50  0001 C CNN
+	1    6950 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5DA12599
+P 6400 3350
+F 0 "R7" V 6607 3350 50  0000 C CNN
+F 1 "1M" V 6516 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6330 3350 50  0001 C CNN
+F 3 "~" H 6400 3350 50  0001 C CNN
+	1    6400 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5DA197F5
+P 6400 3500
+F 0 "#PWR0102" H 6400 3250 50  0001 C CNN
+F 1 "GND" H 6405 3327 50  0000 C CNN
+F 2 "" H 6400 3500 50  0001 C CNN
+F 3 "" H 6400 3500 50  0001 C CNN
+	1    6400 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3200 7300 3200
+Wire Wire Line
+	6800 3200 6750 3200
+Connection ~ 6750 3200
+Wire Wire Line
+	6000 3200 6400 3200
+Connection ~ 6400 3200
+Wire Wire Line
+	6400 3200 6750 3200
+Wire Wire Line
+	3000 3000 3450 3000
+Text GLabel 1350 1900 1    50   Input ~ 0
+BATT+
+$Comp
+L Device:Fuse F1
+U 1 1 5D75F413
+P 1350 2100
+F 0 "F1" H 1410 2146 50  0000 L CNN
+F 1 "Fuse" H 1410 2055 50  0000 L CNN
+F 2 "SamacSys_Parts:littleFuseBF1" V 1280 2100 50  0001 C CNN
+F 3 "~" H 1350 2100 50  0001 C CNN
+	1    1350 2100
 	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
