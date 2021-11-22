@@ -18,7 +18,7 @@ to enable the high switching with NMOS.
 
 The PCB includes the following features:
   - dimensions: 74mm x 38.2mm
-  - maximum current of at least 250A (more with additional copper and cooling)
+  - maximum current of at least 125A (more with additional copper and cooling)
   - maximum voltage of 60V
   - controlled dI/dt with capacitor and current limiting resistor
   - 10 TPW1R306PL N-channel MOSFET
